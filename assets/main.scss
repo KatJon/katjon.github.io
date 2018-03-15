@@ -1,0 +1,17 @@
+---
+---
+
+$content-width:    800px !default;
+$spacing-unit:     30px !default;
+
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@import "katjon";

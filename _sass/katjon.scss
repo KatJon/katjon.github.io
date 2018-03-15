@@ -1,0 +1,40 @@
+// COPIED FROM MINIMA THEME
+$content-width:    800px !default;
+$spacing-unit:     30px !default;
+
+$on-palm:          600px !default;
+$on-laptop:        800px !default;
+
+// COLORS
+// Palette URL: http://paletton.com/#uid=23o0u0kvA4AuOev5BDtNcrdvZRd */
+$color-primary-0: #011217;	// Main Primary color */
+$color-primary-1: #053948;
+$color-primary-2: #99B1B8;
+$color-primary-3: #026A87;
+$color-primary-4: #08B2E2;
+
+$color-complement-0: #241300;	// Main Complement color */
+$color-complement-1: #733C04;
+$color-complement-2: #FFE9D2;
+$color-complement-3: #D96D00;
+$color-complement-4: #FF8100;
+
+$light-grey: #EAEAEA;
+
+$main-bg: $color-primary-0;
+$main-color: $light-grey;
+$accent: $color-complement-3;
+$headlink: $color-complement-4;
+$link: $color-primary-2;
+
+@mixin media-query($device) {
+    @media screen and (max-width: $device) {
+        @content;
+    }
+}
+
+@import 
+    "katjon/base",
+    "katjon/post",
+    "katjon/syntax-highlighting"
+;

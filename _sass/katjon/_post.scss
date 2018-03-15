@@ -1,0 +1,23 @@
+.post {
+    .post-title {
+        color: $accent;
+        margin-bottom: 5px;
+    }
+
+    .post-meta {
+        margin: 0;
+        margin-bottom: 5px;
+
+        .post-date {
+            font-weight: bold;
+        }
+    
+        .post-author {
+    
+        }
+    }
+
+    .post-tags {
+        margin-top: 0;
+    }
+}

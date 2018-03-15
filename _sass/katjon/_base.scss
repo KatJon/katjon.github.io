@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Play|Cinzel|IBM+Plex+Serif|Source+Code+Pro');
+
+/*
+font-family: 'Cinzel', serif;
+font-family: 'IBM Plex Serif', serif;
+*/
+
+body {
+    background-color: $main-bg;
+    color: $main-color;
+    font-family: 'IBM Plex Serif', serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Play', cursive;
+}
+
+figure {
+    margin-left: 20px;
+    overflow: auto;
+}
+
+code {
+    font-family: 'Source Code Pro', monospace;
+}
+
+a {
+    text-decoration: none;
+    color: $link;
+
+    &:hover {
+        text-decoration: underline;
+    }
+
+    &.headlink {
+        color: $headlink;
+    }
+}
+
+.main {
+    margin: 0 20px;
+}
