@@ -9,6 +9,7 @@ body {
     background-color: $main-bg;
     color: $main-color;
     font-family: 'IBM Plex Serif', serif;
+    line-height: 24px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,7 +17,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 figure {
-    margin-left: 20px;
+    margin-left: 24px;
     overflow: auto;
 }
 
@@ -38,5 +39,5 @@ a {
 }
 
 .main {
-    margin: 0 20px;
+    margin: 0 24px;
 }
