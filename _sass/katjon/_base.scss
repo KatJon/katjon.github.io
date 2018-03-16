@@ -9,11 +9,13 @@ body {
     background-color: $main-bg;
     color: $main-color;
     font-family: 'IBM Plex Serif', serif;
+    font-size: 18px;
     line-height: 24px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Play', cursive;
+    color: $header
 }
 
 figure {
@@ -32,12 +34,59 @@ a {
     &:hover {
         text-decoration: underline;
     }
-
-    &.headlink {
-        color: $headlink;
-    }
 }
 
 .main {
-    margin: 0 24px;
+    margin: 12px 24px;
+
+    & > nav {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+
+        font-family: 'Play', cursive;
+
+
+        .headlink {
+            position: relative;
+            left: 0px;
+            display: inline-block;
+            color: $headlink;
+            font-size: 250%;
+
+            @include media-query($on-palm) {
+                width: 100%;
+            }
+        }
+
+        ul {
+            position: relative;
+            display: inline-block;
+            list-style: none;
+
+            &.brand {
+                padding-left: 0px;
+            }
+
+            &.links {
+                position: absolute;
+                right: 0px;
+
+                li {
+                    display: inline;
+                    padding: 18px 24px;
+                    font-size: 24px;
+                    background-color: $nav-elem;
+                    border-radius: 6px;
+
+                    a {
+                        color: $main-bg;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }
+
+    
 }

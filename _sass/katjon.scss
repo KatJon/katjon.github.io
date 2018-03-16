@@ -22,9 +22,12 @@ $color-complement-4: #FF8100;
 $light-grey: #EAEAEA;
 
 $main-bg: $color-primary-0;
+$nav-elem: $color-complement-3;
+
 $main-color: $light-grey;
-$accent: $color-complement-3;
 $headlink: $color-complement-4;
+$header: $color-complement-2;
+$accent: $color-complement-3;
 $link: $color-primary-2;
 
 @mixin media-query($device) {
