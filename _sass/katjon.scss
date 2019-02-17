@@ -5,30 +5,12 @@ $spacing-unit:     30px !default;
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
 
-// COLORS
-// Palette URL: http://paletton.com/#uid=23o0u0kvA4AuOev5BDtNcrdvZRd */
-$color-primary-0: #011217;	// Main Primary color */
-$color-primary-1: #053948;
-$color-primary-2: #99B1B8;
-$color-primary-3: #026A87;
-$color-primary-4: #08B2E2;
+$main-bg: #FFF;
+$main-color: #333;
+$nav-bg: #333;
+$nav-color: darken(#FFF, 10%);
 
-$color-complement-0: #241300;	// Main Complement color */
-$color-complement-1: #733C04;
-$color-complement-2: #FFE9D2;
-$color-complement-3: #D96D00;
-$color-complement-4: #FF8100;
-
-$light-grey: #EAEAEA;
-
-$main-bg: $color-primary-0;
-$nav-elem: $color-complement-3;
-
-$main-color: $light-grey;
-$headlink: $color-complement-4;
-$header: $color-complement-2;
-$accent: $color-complement-3;
-$link: $color-primary-2;
+$accent: #026e00;
 
 @mixin media-query($device) {
     @media screen and (max-width: $device) {

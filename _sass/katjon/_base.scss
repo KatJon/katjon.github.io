@@ -1,21 +1,22 @@
-@import url('https://fonts.googleapis.com/css?family=Play|Cinzel|IBM+Plex+Serif|Source+Code+Pro');
+@import url('https://fonts.googleapis.com/css?family=Play|EB+Garamond|Source+Sans+Pro|Source+Code+Pro');
 
-/*
-font-family: 'Cinzel', serif;
-font-family: 'IBM Plex Serif', serif;
-*/
 
 body {
     background-color: $main-bg;
     color: $main-color;
-    font-family: 'IBM Plex Serif', serif;
+    font-family: 'Source Sans Pro', serif;
     font-size: 18px;
     line-height: 24px;
+    margin: 0px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Play', cursive;
-    color: $header
+}
+
+.container {
+    max-width: 800px;
+    margin: 0px auto;
 }
 
 figure {
@@ -29,64 +30,63 @@ code {
 
 a {
     text-decoration: none;
-    color: $link;
+
+    header & {
+        color: $nav-color;
+    }
+
+    main & {
+        color: $accent;
+    }
+
 
     &:hover {
         text-decoration: underline;
     }
 }
 
-.main {
-    margin: 12px 24px;
+header {
+    width: 100%;
+    background-color: $nav-bg;
+    color: $nav-color;
+    padding: 24px 24px 0 24px;
 
-    & > nav {
-        position: relative;
-        display: inline-block;
+    .brand {
+        display: block;
         width: 100%;
+        text-align: center;
 
-        font-family: 'Play', cursive;
+        font-family: 'EB Garamond', serif;
+        font-weight: 800;
+        font-size: 40px;
 
-
-        .headlink {
-            position: relative;
-            left: 0px;
-            display: inline-block;
-            color: $headlink;
-            font-size: 250%;
-
-            @include media-query($on-palm) {
-                width: 100%;
-            }
+        .katjon {
+            color: lighten($accent, 10%);
         }
 
-        ul {
-            position: relative;
-            display: inline-block;
-            list-style: none;
+    }
 
-            &.brand {
-                padding-left: 0px;
-            }
+    nav > ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 0px;
 
-            &.links {
-                position: absolute;
-                right: 0px;
+        li {
+            padding: 12px 12px;
 
-                li {
-                    display: inline;
-                    padding: 18px 24px;
-                    font-size: 24px;
-                    background-color: $nav-elem;
-                    border-radius: 6px;
 
-                    a {
-                        color: $main-bg;
-                        text-transform: uppercase;
-                    }
+            &:not(:first-child) {
+                &::before {
+                    content: '|';
+                    padding-right: 24px;
                 }
             }
         }
     }
+}
 
-    
+main {
+    width: 100%;
+
 }

@@ -8,13 +8,12 @@
     <title>{{ site.title }}</title>
 </head>
 <body>
-    <div class="main">
-        {% include header.html %}
-        <hr/>
-        <div class="content">
+    {% include header.html %}
+    <main>
+        <div class="container">
             {{ content }}
         </div>
-        {% include footer.html %}
-    </div>
+    </main>
+    {% include footer.html %}
 </body>
 </html>
