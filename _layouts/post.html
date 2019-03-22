@@ -11,12 +11,12 @@ layout: default
             {%- endif -%}
         </h5>
         {%- if page.tags and page.tags.size > 0 -%}
-            <h6 class="post-tags">
+            <h5 class="post-tags">
                 Tags: &nbsp;
                 {%- for tag in page.tags  -%}
                     <span class="tag">{{ tag }}</span> &nbsp;
                 {%- endfor -%}
-            </h6>
+            </h5>
         {%- endif -%}
     </div>
     {{ content }}

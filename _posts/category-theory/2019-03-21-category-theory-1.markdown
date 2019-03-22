@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Category Theory 1 [PL]"
-date:   2019-03-20 11:15:00 +0100
+date:   2019-03-21 11:15:00 +0100
 author: katjon
 categories: category-theory
 tags: category, theory, knsi, lambda
