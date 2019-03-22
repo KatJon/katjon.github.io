@@ -63,7 +63,6 @@ header {
         .katjon {
             color: lighten($accent, 10%);
         }
-
     }
 
     nav > ul {
@@ -74,7 +73,6 @@ header {
 
         li {
             padding: 12px 12px;
-
 
             &:not(:first-child) {
                 &::before {
@@ -87,6 +85,24 @@ header {
 }
 
 main {
-    width: 100%;
+    width: 100vw;
 
+    .post-list {
+        list-style: none;
+        padding-left: 0;
+
+        .post-meta {
+            color: rgba($main-color, 0.6);
+        }
+
+        .post-title {
+            margin: 0;
+        }
+    }
+}
+
+code.highlighter-rouge {
+    background: none;
+    color: $main-color;
+    font-weight: bold;
 }

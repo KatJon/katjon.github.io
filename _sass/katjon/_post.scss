@@ -1,23 +1,30 @@
-.post {
+.post-header {
+    h1,h5,h6 {
+        margin: 0;
+    }
+
+    h5,h6 {
+        display: inline;
+    }
+
     .post-title {
         color: $main-color;
-        margin-bottom: 5px;
+        font-size: 1.5em;
     }
 
     .post-meta {
-        margin: 0;
-        margin-bottom: 5px;
+        color: rgba($main-color, 0.6);
 
         .post-date {
             font-weight: bold;
         }
     
         .post-author {
-    
+            font-weight: bold;
         }
     }
 
     .post-tags {
-        margin-top: 0;
+        color: rgba($main-color, 0.6);
     }
 }

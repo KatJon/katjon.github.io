@@ -2,23 +2,22 @@
 layout: default
 ---
 <article>
-    <header class="post">
-        <h2 class="post-title">{{ page.title | escape }}</h3>
+    <div class="post-header">
+        <h1 class="post-title">{{ page.title | escape }}</h1>
         <h5 class="post-meta">
             <span class="post-date">{{ page.date | date_to_string }}</span> &nbsp;
             {%- if page.author -%}
                 <span class="post-author">~{{ page.author }}</span> &nbsp;
             {%- endif -%}
         </h5>
-        {%- if page.categories and page.categories.size > 0 -%}
+        {%- if page.tags and page.tags.size > 0 -%}
             <h6 class="post-tags">
-                Tags: 
-                {%- for tag in page.categories  -%}
+                Tags: &nbsp;
+                {%- for tag in page.tags  -%}
                     <span class="tag">{{ tag }}</span> &nbsp;
                 {%- endfor -%}
             </h6>
         {%- endif -%}
-        
-    </header>
+    </div>
     {{ content }}
 </article>
