@@ -1,0 +1,9 @@
+
+<figure class="caption">
+    <img src="{{include.src}}" />
+    {% if include.href %}
+        <a href="{{include.href}}">{{include.caption}}</a>
+    {% else %}
+        <span>{{include.caption}}</span>
+    {% endif %}
+</figure>

@@ -46,10 +46,11 @@ a {
 }
 
 header {
+    box-sizing: border-box;
     width: 100%;
     background-color: $nav-bg;
     color: $nav-color;
-    padding: 24px 24px 0 24px;
+    padding: 1.5em 1.5em 0 1.5em;
 
     .brand {
         display: block;
@@ -58,7 +59,8 @@ header {
 
         font-family: 'EB Garamond', serif;
         font-weight: 800;
-        font-size: 40px;
+        font-size: 2em;
+        line-height: 1em;
 
         .katjon {
             color: lighten($accent, 10%);
@@ -70,9 +72,10 @@ header {
         display: flex;
         justify-content: center;
         padding: 0px;
+        margin: 0px;
 
         li {
-            padding: 12px 12px;
+            padding: 0.8em;
 
             &:not(:first-child) {
                 &::before {
