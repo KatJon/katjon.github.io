@@ -1,9 +1,9 @@
 
 <figure class="caption">
     <img src="{{include.src}}" />
-    {% if include.href %}
+    {% if include.href && include.caption %}
         <a href="{{include.href}}">{{include.caption}}</a>
-    {% else %}
+    {% else if include.caption %}
         <span>{{include.caption}}</span>
     {% endif %}
 </figure>

@@ -70,3 +70,31 @@ W teorii zbiorów mieliśmy dwie charakteryzacje "porządnych funkcji" - mianowi
     href="https://www.facebook.com/recreationaltypes/"
     caption="by Well-typed Constructivist Memes"
 %}
+
+<figure class="task">
+<span><b>Zadanie:</b> Pokaż że złożenie monomorfizmów jest monomorfizmem.</span>
+<pre>
+Weźmy f:X->Y, g:Y->Z. Pokażmy, że g.f jest mono.
+Ustalmy więc obiekt W i morfizmy u,v: W -> X.
+
+Wtedy:
+
+         (g.f).u = (g.f).v
+        ------------------- (Assoc)
+         g.(f.u) = g.(f.v) 
+        ------------------- (g - mono)
+             f.u = f.v 
+            ----------- (f - mono)
+               u = f
+[]
+</pre>
+</figure>
+
+Elementy początkowe i końcowe 
+---
+
+Jak zobaczyliśmy w poprzednich konstrukcjach, teoria kategorii nie rozważa, czym są obiekty, a w jaki sposób są "połączone" z innymi obiektami. (*Można powiedzieć, że teoria mnogości mówi o tym, co zbiory mają, a teoria kategorii, jakie obiekty są.*)
+
+Często pojawiającym się schematem w teorii kategorii jest *konstrukcja uniwersalna*. Polega ona na wyszukaniu "wzorca", a następnie określeniu "rankingu" na znalezionych elementach.
+
+

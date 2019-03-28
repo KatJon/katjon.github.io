@@ -104,6 +104,25 @@ main {
     }
 }
 
+figure {
+    &.caption {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        img {
+            border: 2px solid rgba($main-color, 0.6);
+            max-width: 400px;
+        }
+    }
+
+    &.task {
+        border: 2px solid rgba($main-color, 0.6);
+        margin: 0;
+        padding: 10px;
+    }
+}
+
 code.highlighter-rouge {
     background: none;
     color: $main-color;

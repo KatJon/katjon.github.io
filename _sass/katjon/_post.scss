@@ -31,29 +31,8 @@
 
 article {
     padding-top: 1em;
-    
+
     h2 {
         font-size: 1.2em;
     }
-
-    figure {
-        &.caption {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-
-            img {
-                border: 2px solid rgba($main-color, 0.6);
-                max-width: 400px;
-            }
-        }
-    
-        &.task {
-            border: 2px solid rgba($main-color, 0.6);
-            margin: 0;
-            padding: 10px;
-        }
-    }
-
-    
 }
