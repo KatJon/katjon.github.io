@@ -8,7 +8,9 @@ title: All posts
     <h2 class="post-list-heading">Posts</h2>
     <ul class="post-list">
         {%- for post in site.posts -%}
-            {% include short_post.html %}
+            {%- unless post.categories contains "news" -%}
+                {% include short_post.html %}
+            {%- endunless -%}
         {%- endfor -%}
     </ul>
 </section>

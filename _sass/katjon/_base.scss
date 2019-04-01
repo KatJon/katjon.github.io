@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Play|EB+Garamond|Source+Sans+Pro|Source+Code+Pro');
-
+@import url(https://cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css);
 
 body {
     background-color: $main-bg;
@@ -24,8 +24,13 @@ figure {
     overflow: auto;
 }
 
-code {
-    font-family: 'Source Code Pro', monospace;
+code,
+pre {
+    font-family: 'Fira Code', monospace;
+}
+
+pre {
+    max-width: 100%;
 }
 
 a {
@@ -38,11 +43,6 @@ a {
     main & {
         color: $accent;
     }
-
-
-    &:hover {
-        text-decoration: underline;
-    }
 }
 
 header {
@@ -51,6 +51,8 @@ header {
     background-color: $nav-bg;
     color: $nav-color;
     padding: 1.5em 1.5em 0 1.5em;
+
+    text-shadow: 2px 2px black;
 
     .brand {
         display: block;
@@ -126,5 +128,4 @@ figure {
 code.highlighter-rouge {
     background: none;
     color: $main-color;
-    font-weight: bold;
 }
