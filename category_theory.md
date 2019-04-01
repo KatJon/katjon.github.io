@@ -7,6 +7,15 @@ title: Category theory
 Notes from the meetings of student research group, mostly focusing on category theory, but also planning to mention some type theory and non-classical logic.
 
 <section class="posts">
+    <h2 class="post-list-heading">Ogłoszenia</h2>
+    <ul class="post-list">
+        {%- for news in site.data.news -%}
+            {% include news.html %}
+        {%- endfor -%}
+    </ul>
+</section>
+
+<section class="posts">
     <h2 class="post-list-heading">Posts</h2>
     <ul class="post-list">
         {%- for post in site.posts -%}

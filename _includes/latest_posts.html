@@ -2,7 +2,9 @@
 <section class="posts">
     <ul class="post-list">
         {%- for post in site.posts limit:5 -%}
-            {% include short_post.html %}
+            {%- unless post.categories contains "news" -%}
+                {% include short_post.html %}
+            {%- endunless -%}
         {%- endfor -%}
     </ul>
 </section>
