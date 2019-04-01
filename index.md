@@ -13,4 +13,14 @@ Main topics
 * Category Theory
 * Logic programming: [SWI-Prolog](http://www.swi-prolog.org), [Curry](http://www-ps.informatik.uni-kiel.de/currywiki/)
 
+{% include caption.html 
+    src="/assets/img/haskell.jpg" 
+%}
+
+Latest posts
+---
+
+{%- if site.posts.size > 0 -%}
+    {% include latest_posts.html %}
+{%- endif -%}
 
