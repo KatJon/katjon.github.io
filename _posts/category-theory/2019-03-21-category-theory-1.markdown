@@ -26,7 +26,7 @@ Kategorią nazywamy parę "kolekcji" (zauważmy, że nie mówię zbiór, bo w ni
 
 Aby taka para tworzyła kategorię, musi spełniać następujące prawa:
 
-1. `{{forall}}X in Ob(C), {{exists}}id_X, ({{forall}}f:X->Y, f.id_X = f /\ {{forall}}g:Y->X, id_X.g = g`
+1. `{{forall}}X in Ob(C), {{exists}}id_X, ({{forall}}f:X->Y, f.id_X = f /\ {{forall}}g:Y->X, id_X.g = g)`
 
 2. `{{forall}}X,Y,Z in Ob(C), {{forall}}f:X->Y, {{forall}}g:Y->Z, {{exists}}(g.f):X->Z`
 
