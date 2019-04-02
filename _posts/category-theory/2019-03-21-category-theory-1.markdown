@@ -57,7 +57,7 @@ Izo-, mono- i epimorfizmy
 
 Często chcemy pokazać, że dwa elementy są dla nas w jakimś sensie nierozróżnialne, pomimo, że są to istotnie różne elementy. Chcemy wtedy powiedzieć, że dwa obiekty są izomorficzne.
 
-> **Def.** W teorii kategorii mówimy, że strzałka `f:X->Y` jest *izomorfizmem* oraz, że X i Y są izomorficzne, jeśli istnieje strzłka `g:Y->X`, taka, że  `f.g=id_Y /\ g.f=id_X`
+> **Def.** W teorii kategorii mówimy, że strzałka `f:X->Y` jest *izomorfizmem* oraz, że X i Y są izomorficzne, jeśli istnieje strzałka `g:Y->X`, taka, że  `f.g=id_Y /\ g.f=id_X`
 
 > **Ćwiczenie:** Pokazać, że takie `g` jest jednoznaczne - oznaczmy je wtedy `f^{-1}` i nazywamy odwrotnością.
 
