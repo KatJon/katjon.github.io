@@ -10,6 +10,7 @@ These are the notes from the meeting of Lambda section in the [Student Research 
 
 {% assign forall = "∀" %}
 {% assign exists = "∃" %}
+{% assign box = "∎" %}
 
 [knsi]: https:/knsi-wppt.github.io
 
@@ -73,9 +74,9 @@ W teorii zbiorów mieliśmy dwie charakteryzacje "porządnych funkcji" - mianowi
     caption="by Well-typed Constructivist Memes"
 %}
 
-<figure class="task">
-<span><b>Zadanie:</b> Pokaż że złożenie monomorfizmów jest monomorfizmem.</span>
-<pre>
+```
+Zadanie: Pokaż że złożenie monomorfizmów jest monomorfizmem.
+
 Weźmy f:X->Y, g:Y->Z. Pokażmy, że g.f jest mono. 
 Ustalmy więc obiekt W i morfizmy u,v:W->X.
 
@@ -88,9 +89,8 @@ Wtedy:
              f.u = f.v 
             ----------- (f - mono)
                u = f
-[]
-</pre>
-</figure>
+{{box}}
+```
 
 Elementy początkowe i końcowe 
 ---
@@ -99,7 +99,7 @@ Jak zobaczyliśmy w poprzednich konstrukcjach, teoria kategorii nie rozważa, cz
 
 Często pojawiającym się schematem w teorii kategorii jest *konstrukcja uniwersalna*. Polega ona na wyszukaniu "wzorca" w całej kategorii (uniwersum), a następnie określeniu "rankingu" na znalezionych elementach. Konstrukcja tego typu jest pomocna, chociażby w przypadku próby zdefiniowania pojęcia zbioru pustego. W teorii mnogości, zbiór pusty, to zbiór, który nie zawiera żadnego elementu. Ale w teorii kategorii nie wolno nam zaglądać "do środka" zbiorów. Jedyne co mamy do dyspozycji, to obiekty i strzałki (które w kategorii `Set` są funkcjami). 
 
-Z wstępu do logiki, możemy sobie przypomnieć, że ze zbioru pustego istnieje funkcja w dowolny inny zbiór (jeśli uda ci się dać mi jakiś element zbioru pustego, to dam ci element z przeciwdziedziny :v) - funkcja pusta. Widzimy, że jest to charakteryzacja ekstensjonalna (wykorzystująca jednynie własności zewnętrzne obiektu). Możemy zastanawiać się, czy istotnie, opisuje ona jedynie zbiór pusty, jednak wiemy, że z żadnego innego obiektu nie istnieje strzałka do zbioru pustego, oraz że gdy mamy chociaż jeden element w dziedzinie, to istnieje co najmniej tyle funkcji ile wynosi moc przeciwdziedziny. 
+Z wstępu do logiki, możemy sobie przypomnieć, że ze zbioru pustego istnieje funkcja w dowolny inny zbiór (jeśli uda ci się dać mi jakiś element zbioru pustego, to dam ci element z przeciwdziedziny :v) - funkcja pusta. Widzimy, że jest to charakteryzacja wykorzystująca jednynie własności zewnętrzne obiektu. Możemy zastanawiać się, czy istotnie, opisuje ona jedynie zbiór pusty, jednak wiemy, że z żadnego innego obiektu nie istnieje strzałka do zbioru pustego, oraz że gdy mamy chociaż jeden element w dziedzinie, to istnieje co najmniej tyle funkcji ile wynosi moc przeciwdziedziny. 
 
 Przenosząc powyższe rozumowanie na grunt teorii kategorii otrzymujemy definicję **obiektu początkowego**:
 
@@ -121,3 +121,13 @@ Przenosząc powyższe rozumowanie na grunt teorii kategorii otrzymujemy definicj
 Oba pojęcia są do siebie bardzo podobne - definicje różnią się jedynie kierunkiem strzałek. Istotnie, powiązanie istnieje, ale omówimy je na późniejszych spotkaniach.
 
 Wracając do konstrukcji uniwersalnej, dobrze byłoby pokazać ją w kontekście obiektów początkowych i końcowych. Naszym wzorcem będzie w tym wypadku pojedynczy obiekt, a rankingami: dla ob. początkowego "A jest lepsze od B, jeśli istnieje `f:A->B`", dla ob. końcowego "A jest lepsze of B, jeśli istnieje `f:B->A`". Możemy myśleć o tym, jako o tym, jak bardzo na początku (odp. końcu strzałki) obiekt może się znajdować.
+
+Zmiany
+---
+* 02.04.19 - poprawienie literówek,  (K. Marek)
+* 03.04.19 - dodanie literatury, drobne zmiany w układzie i typografii
+
+Literatura
+---
+* Benjamin C. Pierce, *Basic Category Theory...* - rozdziały 1.1, 1.3, 1.4
+* [Bartosz Milewski, *Categories great and small*](https://bartoszmilewski.com/2014/12/05/categories-great-and-small/)
