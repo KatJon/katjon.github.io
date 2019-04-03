@@ -27,7 +27,7 @@ Kategorią nazywamy parę "kolekcji" (zauważmy, że nie mówię zbiór, bo w ni
 
 Aby taka para tworzyła kategorię, musi spełniać następujące prawa:
 
-1. `{{forall}}X in Ob(C), {{exists}}id_X, {{forall}}f, id_X.f = f.id_X = f`
+1. `{{forall}}X in Ob(C), {{exists}}id_X, ({{forall}}f:X->Y, f.id_X = f /\ {{forall}}g:Y->X, id_X.g = g)`
 
 2. `{{forall}}X,Y,Z in Ob(C), {{forall}}f:X->Y, {{forall}}g:Y->Z, {{exists}}(g.f):X->Z`
 
@@ -58,7 +58,7 @@ Izo-, mono- i epimorfizmy
 
 Często chcemy pokazać, że dwa elementy są dla nas w jakimś sensie nierozróżnialne, pomimo, że są to istotnie różne elementy. Chcemy wtedy powiedzieć, że dwa obiekty są izomorficzne.
 
-> **Def.** W teorii kategorii mówimy, że strzałka `f:X->Y` jest *izomorfizmem* oraz, że X i Y są izomorficzne, jeśli istnieje strzłka `g:Y->X`, taka, że  `f.g=id_Y /\ g.f=id_X`
+> **Def.** W teorii kategorii mówimy, że strzałka `f:X->Y` jest *izomorfizmem* oraz, że X i Y są izomorficzne, jeśli istnieje strzałka `g:Y->X`, taka, że  `f.g=id_Y /\ g.f=id_X`
 
 > **Ćwiczenie:** Pokazać, że takie `g` jest jednoznaczne - oznaczmy je wtedy `f^{-1}` i nazywamy odwrotnością.
 
@@ -99,7 +99,7 @@ Jak zobaczyliśmy w poprzednich konstrukcjach, teoria kategorii nie rozważa, cz
 
 Często pojawiającym się schematem w teorii kategorii jest *konstrukcja uniwersalna*. Polega ona na wyszukaniu "wzorca" w całej kategorii (uniwersum), a następnie określeniu "rankingu" na znalezionych elementach. Konstrukcja tego typu jest pomocna, chociażby w przypadku próby zdefiniowania pojęcia zbioru pustego. W teorii mnogości, zbiór pusty, to zbiór, który nie zawiera żadnego elementu. Ale w teorii kategorii nie wolno nam zaglądać "do środka" zbiorów. Jedyne co mamy do dyspozycji, to obiekty i strzałki (które w kategorii `Set` są funkcjami). 
 
-Z wstępu do logiki, możemy sobie przypomnieć, że ze zbioru pustego istnieje funkcja w dowolny inny zbiór (jeśli uda ci się dać mi jakiś element zbioru pustego, to dam ci element z przeciwdziedziny :v) - funkcja pusta. Widzimy, że jest to charakteryzacja wykorzystująca jednynie własności zewnętrzne obiektu. Możemy zastanawiać się, czy istotnie, opisuje ona jedynie zbiór pusty, jednak wiemy, że z żadnego innego obiektu nie istnieje strzałka do zbioru pustego, oraz że gdy mamy chociaż jeden element w dziedzinie, to istnieje co najmniej tyle funkcji ile wynosi moc przeciwdziedziny. 
+Z wstępu do logiki, możemy sobie przypomnieć, że ze zbioru pustego istnieje funkcja w dowolny inny zbiór (jeśli uda ci się dać mi jakiś element zbioru pustego, to dam ci element z przeciwdziedziny :v) - funkcja pusta. Dodatkowo, jest to jedyna taka funkcja. Widzimy, że jest to charakteryzacja wykorzystująca jednynie własności zewnętrzne obiektu. Możemy zastanawiać się, czy istotnie, opisuje ona jedynie zbiór pusty, jednak wiemy, że z żadnego innego obiektu nie istnieje strzałka do zbioru pustego, oraz że gdy mamy chociaż jeden element w dziedzinie, to istnieje co najmniej tyle funkcji ile wynosi moc przeciwdziedziny. 
 
 Przenosząc powyższe rozumowanie na grunt teorii kategorii otrzymujemy definicję **obiektu początkowego**:
 
@@ -120,7 +120,7 @@ Przenosząc powyższe rozumowanie na grunt teorii kategorii otrzymujemy definicj
 
 Oba pojęcia są do siebie bardzo podobne - definicje różnią się jedynie kierunkiem strzałek. Istotnie, powiązanie istnieje, ale omówimy je na późniejszych spotkaniach.
 
-Wracając do konstrukcji uniwersalnej, dobrze byłoby pokazać ją w kontekście obiektów początkowych i końcowych. Naszym wzorcem będzie w tym wypadku pojedynczy obiekt, a rankingami: dla ob. początkowego "A jest lepsze od B, jeśli istnieje `f:A->B`", dla ob. końcowego "A jest lepsze of B, jeśli istnieje `f:B->A`". Możemy myśleć o tym, jako o tym, jak bardzo na początku (odp. końcu strzałki) obiekt może się znajdować.
+Wracając do konstrukcji uniwersalnej, dobrze byłoby pokazać ją w kontekście obiektów początkowych i końcowych. Naszym wzorcem będzie w tym wypadku pojedynczy obiekt, a rankingami: dla ob. początkowego "A jest lepsze od B, jeśli istnieje `f:A->B`", dla ob. końcowego "A jest lepsze of B, jeśli istnieje `f:B->A`". Możemy myśleć o tym, jako o mierze, jak blisko początku (odp. końca strzałki) obiekt może się znajdować.
 
 Zmiany
 ---
