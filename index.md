@@ -11,8 +11,7 @@ Main topics
     + Functional aspects of JavaScript
 * Formally verified software and theorem proving in [Coq](https://coq.inria.fr)
 * Category Theory
-* Logic programming: [SWI-Prolog](http://www.swi-prolog.org), [Curry](http://www-ps.informatik.uni-kiel.de/currywiki/)
-
+* Logic programming: [SWI-Prolog](http://www.swi-prolog.org)
 {% include caption.html 
     src="/assets/img/haskell.jpg" 
 %}
