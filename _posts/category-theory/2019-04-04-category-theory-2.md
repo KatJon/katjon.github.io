@@ -33,7 +33,7 @@ Ustalmy obiekty A i B. Chcemy uzyskać kategoryczną definicję produktu AxB. Ro
 > {% include caption.html src="/diagrams/CT-2/product.png" %}
 > Diagram rozumiemy w ten sposób, że dla trójki `(X, f:X->A, g:X->B)` istnieje dokładnie jedna strzałka `h:X->AxB`, taka, że `{{pi}}_A.h=f` i `{{pi}}_B.h=g`.
 >
-> Kiedy `AxB` jest produktem, to taką strzałkę `h:X->AxB`.
+> Kiedy `AxB` jest produktem, to taką strzałkę `h:X->AxB` nazywamy strzałką mediacyjną.
 
 W kategorii **`Set`** strzałka mediacyjna ma postać `<f,g>`, która definiowana jest jako
 
