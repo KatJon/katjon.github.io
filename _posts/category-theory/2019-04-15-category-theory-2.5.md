@@ -36,7 +36,7 @@ Przypomnijmy, co chcemy osiągnąć:
 > **Def.** **Produktem** obiektów `A` i `B` nazywamy obiekt `AxB`, taki, że dla dowolnego `(X, f:X->A, g:X->B)` poniższy diagram komutuje:
 > {% include caption.html src="/diagrams/CT-2/product.png" %}
 
-Tworzyny więc kategorię "klinów" `C'`, której obiektami są `(X,f:X->A,g:X->B)`, a `C'`-strzałka `h:(X,f:X->A,g:X->B)->(Y,i:Y->A,j:Y->B)` istnieje, gdy istnieje `C`-strzałka (strzałka w kategorii C) `m:X->Y`, t. że `f=i.m /\ g=j.m`.
+Tworzymy więc kategorię "klinów" `C'`, której obiektami są `(X,f:X->A,g:X->B)`, a `C'`-strzałka `h:(X,f:X->A,g:X->B)->(Y,i:Y->A,j:Y->B)` istnieje, gdy istnieje `C`-strzałka (strzałka w kategorii C) `m:X->Y`, t. że `f=i.m /\ g=j.m`.
 
 ```
 Sprawdźmy, że istotnie C' jest kategorią. 
